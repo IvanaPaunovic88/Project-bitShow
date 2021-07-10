@@ -1,0 +1,62 @@
+header {
+  position: relative;
+  width: 100%;
+}
+
+.noResults {
+  text-align: center;
+}
+
+#searchList {
+  position: absolute;
+  top: 50px;
+  background-color: #f0f0f0;
+  list-style: none;
+  padding-left: 0;
+}
+
+#searchList li {
+  border-bottom: 1px solid black;
+  text-align: left;
+  text-overflow: clip;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .cardHolderSinglePage {
+    display: block;
+    padding: 5px;
+  }
+  .cardHolderSinglePage * {
+    margin: 0px;
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

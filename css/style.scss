@@ -1,0 +1,47 @@
+header {
+    position: relative;
+    width: 100%;
+}
+.noResults{
+    text-align: center;
+}
+#searchList {
+    position: absolute;
+    top: 50px;
+    background-color:#f0f0f0;
+    list-style: none;
+    padding-left: 0;
+}
+#searchList li {
+    border-bottom: 1px solid black;
+    text-align: left;
+    text-overflow: clip;
+}
+.card{
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+}
+.cardHolder{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px){
+
+    .cardHolderSinglePage{
+       display: block;
+       padding:5px;
+       *{
+          margin: 0px;
+          display: block;
+          flex-grow: 1;
+          width: 100%;
+          text-align: center;
+       }
+    }
+ }
+ 
